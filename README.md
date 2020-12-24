@@ -6,7 +6,7 @@
 3. VSCODE (C# plugin installed)
 
 ## Database settings
-Connection string is server=localhost;database=voxed;port=3306;user=root;password=root
+Connection string is server=localhost;database=voxed;port=3306;user=root;password=root, if prefer install mysql using docker check this https://platzi.com/tutoriales/1432-docker/3268-como-crear-un-contenedor-con-docker-mysql-y-persistir-la-informacion/
 1. Username: root
 2. Passowrd: root
 
