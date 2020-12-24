@@ -3,7 +3,10 @@ services:
   web:
     build: .
     ports:
-      - "8000:80"
+      - 5000:5000
+      - 5001:5001
+      - 7240:7240
+    entrypoint: ./entrypoint.sh
     depends_on:
       - db
     

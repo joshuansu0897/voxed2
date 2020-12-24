@@ -4,9 +4,11 @@ COPY . /app
 
 WORKDIR /app
 
-RUN dotnet restore && dotnet build
+ENV PATH $PATH:/root/.dotnet/tools
 
-EXPOSE 80
+RUN dotnet tool install -g dotnet-ef --version 3.1.1 && \ 
+    dotnet restore  && \
+    dotnet build
 
 RUN chmod +x ./entrypoint.sh
 

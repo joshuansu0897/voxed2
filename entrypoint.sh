@@ -2,11 +2,13 @@
 
 set -e
 
+cd ./Server
+
 until dotnet ef database update; do
     echo "SQL Server is starting up"
     sleep 1
 done
 
-echo "SQL Server is up - executing command"
+echo "SQL Server is up - executing command to run"
 
-exec "cd ./Server && dotnet run --server.urls http://*:80"
+dotnet run
