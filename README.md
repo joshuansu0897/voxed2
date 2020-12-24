@@ -17,4 +17,5 @@ Connection string is server=localhost;database=voxed;port=3306;user=root;passwor
 
 ## Run project
 1. cd /Server
-2. dotnet run
+3. dotnet build
+3. dotnet run
