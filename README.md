@@ -12,7 +12,8 @@ Connection string is server=localhost;database=voxed;port=3306;user=root;passwor
 
 ## Database migration
 1. dotnet ef migrations add initial
-2. dotnet ef database update
+2. if you get a error message running the previous command is because you don't have installed dotnet-ef , please run **dotnet tool install --global dotnet-ef** and try the step      number 1 again
+3. dotnet ef database update
 
 ## Run project
 1. cd /Server
