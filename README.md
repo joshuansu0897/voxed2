@@ -24,7 +24,7 @@ This step will generate the database tables based in the entities
 3. dotnet build
 3. dotnet run
 
-# Docker setup
+# Run with Docker
 
 ## Prerequisites
 1. Docker
