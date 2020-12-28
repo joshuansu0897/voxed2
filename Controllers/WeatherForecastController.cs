@@ -1,12 +1,11 @@
-﻿using Voxed2.Shared;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace Voxed2.Server.Controllers
+namespace voxed2.Controllers
 {
     [ApiController]
     [Route("[controller]")]
@@ -17,11 +16,11 @@ namespace Voxed2.Server.Controllers
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
-        private readonly ILogger<WeatherForecastController> logger;
+        private readonly ILogger<WeatherForecastController> _logger;
 
         public WeatherForecastController(ILogger<WeatherForecastController> logger)
         {
-            this.logger = logger;
+            _logger = logger;
         }
 
         [HttpGet]

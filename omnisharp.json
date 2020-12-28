@@ -1,0 +1,10 @@
+{
+    "fileOptions": {
+        "systemExcludeSearchPatterns": [
+            "**/MySQL/**/*"
+        ],
+        "excludeSearchPatterns": [
+            "**/MySQL/**/*"
+        ]
+    }
+}
