@@ -1,15 +1,5 @@
 version: "3.9"
 services:
-  web:
-    build: .
-    ports:
-      - 5000:5000
-      - 5001:5001
-      - 7240:7240
-    entrypoint: ./entrypoint.sh
-    depends_on:
-      - db
-    
   db:
     image: mysql
     command: --default-authentication-plugin=mysql_native_password
